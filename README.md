@@ -1,4 +1,14 @@
 # Face Classification and Verification
+Implemented CNN-based architectures like ConvNeXt to pattern recognition problems that require position invariance. Worked on the problem of recognizing or verifying faces in images. 
+
+# Problem Setting
+
+In this project, we address two kinds of problems:
+
+1. **Classification Problem**: Our goal is to identify the person in a given picture. This is a closed-set problem, where the subjects in the test set are also present in the training set, although the specific pictures in the test set may not be included in the training data. Achieving high accuracy in this task requires that the embeddings for all subjects in our "vocabulary" are linearly separable from each other.
+
+2. **Verification Problem**: Here, our objective is to determine if the person in a query picture is also present in a given gallery of images. This is an open-set problem, where the subjects in the test data may not have been seen during training. To solve this problem effectively, we need to ensure that the embeddings of two pictures of the same person are always closer to each other than the embeddings of pictures of two different people. Thus, the goal is to determine if the embedding of any picture in the gallery is sufficiently close to that of the query.
+
 
 ## Dependencies
 
